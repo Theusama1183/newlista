@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Listing Page (Business for Sale/Lease)</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="/img/Logo.png" alt="" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/Newlista Homepage.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#">Resources</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link" href="#">About Us</a>
+          <a class="nav-item nav-link" href="#">Contact Us</a>
+          <a href="#">
+            <button class="btn btn-primary">+ Add Listings</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="seller-listing-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.5164471923003!2d-97.39667258699382!3d27.793869928295553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86685ef5844cdf0b%3A0xc457c251f6c09204!2s218%20N%20Chaparral%20St%2C%20Corpus%20Christi%2C%20TX%2078401%2C%20USA!5e0!3m2!1sen!2s!4v1645094326981!5m2!1sen!2s"
+        width="100%"
+        height="490"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div class="list-post-location">
+        <img class="loc-list-image" src="/img/4.png" alt="" />
+        <h3>Cuban Apartment</h3>
+        <p>26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0</p>
+        <div class="dbl-grp">
+          <a href="/4.Property Detail Page.html">
+            <button class="btn-list">See Details</button>
+          </a>
+          <h3 class="list-price-se">$ 1,025,000</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-section">
+      <div class="tabs">
+        <div class="sidebar">
+          <!-- tabs buttons  -->
+          <button class="tab-btn tab-btn-active" data-for-tab="1">
+            Business for Sale/Lease
+          </button>
+          <button class="tab-btn" data-for-tab="2">
+            Commercial Real Estate For Sale
+          </button>
+          <button class="tab-btn" data-for-tab="3">
+            Commercial Real Estate For Lease
+          </button>
+        </div>
+        <!-- tabs content  -->
+        <div class="tbcontent">
+          <div class="tab-content tab-content-active" data-tab="1">
+            <form class="leas-search-form" action="" method="get">
+              <div class="input-form-fields">
+                <input
+                  class="sale-lease-form"
+                  type="text"
+                  id="keyword"
+                  name="keyword"
+                  value=""
+                  placeholder="Enter a keyword"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Min-Cash-Flow"
+                  name="Min-Cash-Flow"
+                  value=""
+                  placeholder="Min. Cash Flow"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Max-Cash-Flow"
+                  name="Max-Cash-Flow"
+                  value=""
+                  placeholder="Max. Cash Flow"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Min-Revenue($)"
+                  name="Min-Revenue($)"
+                  value=""
+                  placeholder="Min Revenue($)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Max-Revenue($)"
+                  name="Max-Revenue($)"
+                  value=""
+                  placeholder="Max Revenue($)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Established-After-Year"
+                  name="Established-After-Year"
+                  value=""
+                  placeholder="Established After Year($)"
+                />
+              </div>
+
+              <div class="checkbox-fields">
+                <div class="a-checkbox">
+                  <input
+                    type="checkbox"
+                    id="Relocatable"
+                    name="Relocatable"
+                    value="Relocatable"
+                  />
+                  <label for="Relocatable"> Relocatable</label>
+                  <input
+                    type="checkbox"
+                    id="Includes-Assets-and-Inventory"
+                    name="Includes-Assets-and-Inventory"
+                    value="Includes Assets and Inventory"
+                  />
+                  <label for="Includes-Assets-and-Inventory">
+                    Includes Assets and Inventory</label
+                  >
+                </div>
+
+                <div class="a-checkbox">
+                  <input
+                    type="checkbox"
+                    id="Owner-Finance"
+                    name="Owner-Finance"
+                    value="Owner-Finance"
+                  />
+                  <label for="Owner Finance"> Owner Finance</label>
+                  <input
+                    type="checkbox"
+                    id="Franchise"
+                    name="Franchise"
+                    value="Franchise"
+                  />
+                  <label for="Franchise"> Franchise</label>
+                </div>
+
+                <div class="a-checkbox">
+                  <input
+                    type="checkbox"
+                    id="Lease-Business"
+                    name="Lease-Business"
+                    value="Lease-Business"
+                  />
+                  <label for="Lease-Business"> Lease Business</label>
+                  <input
+                    type="checkbox"
+                    id="Include-Homebase-Business"
+                    name="Include-Homebase-Business"
+                    value="Include-Homebase-Business"
+                  />
+                  <label for="Include-Homebase-Business">
+                    Include Homebase Business</label
+                  >
+                </div>
+
+                <div class="a-checkbox">
+                  <input
+                    type="checkbox"
+                    id="Includes-Real-Estate"
+                    name="Includes-Real-Estate"
+                    value="Includes-Real-Estate"
+                  />
+                  <label for="Includes-Real-Estate">
+                    Includes Real Estate</label
+                  >
+                </div>
+
+                <div class="btn-container">
+                  <a href="">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                  </a>
+                  <button class="sale-lease-btn" type="submit">
+                    Narrow Your Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-content" data-tab="2">
+            <form class="leas-search-form" action="" method="get">
+              <div class="input-form-fields">
+                <input
+                  class="sale-lease-form"
+                  type="text"
+                  id="keyword"
+                  name="keyword"
+                  value=""
+                  placeholder="Enter a keyword"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Min-Building-Size(SF/SM)"
+                  name="Min-Building-Size(SF/SM)"
+                  value=""
+                  placeholder="Min. Building Size(SF/SM)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Max-Building-Size(SF/SM)"
+                  name="Max-Building-Size(SF/SM)"
+                  value=""
+                  placeholder="Max. Building Size(SF/SM)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Min-Cap-Rate(%)"
+                  name="Min-Cap-Rate(%)"
+                  value=""
+                  placeholder="Min. Cap Rate(%)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Max-Cap-Rate(%)"
+                  name="Max-Cap-Rate(%)"
+                  value=""
+                  placeholder="Max. Cap Rate(%)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Year-Built-From"
+                  name="Year-Built-From"
+                  value=""
+                  placeholder="Year Built (From)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Year-Built-To"
+                  name="Year-Built-To"
+                  value=""
+                  placeholder="Year Built (To)"
+                />
+              </div>
+
+              <div class="extra-fields">
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Min-C-Price"
+                  name="Min-C-Price"
+                  value=""
+                  placeholder="Min. Price ($)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Max-C-Price"
+                  name="Max-C-Price"
+                  value=""
+                  placeholder="Max. Price ($)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Min-Lot-Size(SF/SM)"
+                  name="Min-Lot-Size(SF/SM)"
+                  value=""
+                  placeholder="Min. Lot Size(SF/SM)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Max-Lot-Size(SF/SM)"
+                  name="Max-Lot-Size(SF/SM)"
+                  value=""
+                  placeholder="Max. Lot Size(SF/SM)"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Min-Units"
+                  name="Min-Units"
+                  value=""
+                  placeholder="Min. Units"
+                />
+                <input
+                  class="sale-lease-form"
+                  type="number"
+                  id="Max-Units"
+                  name="Max-Units"
+                  value=""
+                  placeholder="Max. Units"
+                />
+                <input
+                  type="checkbox"
+                  id="Owner-finance"
+                  name="Owner-finance"
+                  value="Owner-finance"
+                />
+                <span><label for="Owner-finance"> Owner Finance</label></span>
+
+                <a href="">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+                <button class="sale-lease-btn" type="submit">
+                  Narrow Your Search
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="tab-content" data-tab="3">
+            <h1>Tab 3</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 sm">
+          <div class="properties-list">
+            <div class="list-featured-image2">
+              <button class="btn-status">Active</button>
+              <div class="img-gk">
+                <h4 class="stock-heading">Available</h4>
+                <div class="img-icons">
+                  <svg
+                    class="compare"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                  <svg
+                    class="heart"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                    />
+                  </svg>
+                  <svg
+                    clas="share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-share"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-metadata">
+              <div class="title-and-price">
+                <h3 class="list-title">Cuban Apartment</h3>
+                <h3 class="list-price">$ 1,025,000</h3>
+              </div>
+              <p class="list-adress">
+                26000 Northwest Freeway, Houston, Texas, 77429 3,600 Sqft, 0
+              </p>
+              <div class="btn-list-price-container">
+                <a href="/4.Property Detail Page.html">
+                  <button class="btn-list-detail">SEE DETAILS</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 sm">
+              <div class="pagination">
+                <a href="#">
+                  <i class="fa fa-angle-left next-page" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <div class="next-page">1</div>
+                </a>
+                <a href="#">
+                  <div class="next-page">2</div>
+                </a>
+                <a href="#">
+                  <div class="next-page">3</div>
+                </a>
+                <a href="#">
+                  <i class="fa fa-angle-right next-page" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer font-small indigo">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <a class="footer-brand" href="#"
+              ><img src="/img/Logo.png" alt=""
+            /></a>
+            <br />
+            <img
+              class="social-ico"
+              src="/img/socialmedia_footer-1.png"
+              alt=""
+            />
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Explore</h5>
+
+            <ul class="list-unstyled">
+              <li>info@newlista.com</li>
+              <li>Mon - Sat, 08 AM - 06 PM</li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+          <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+              Quick Link
+            </h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="/listing-lease-page.html">Listings</a>
+              </li>
+
+              <li>
+                <a href="#!">Terms of Use </a>
+              </li>
+              <li>
+                <a href="#!">Privacy Policy </a>
+              </li>
+              <li>
+                <a href="#!">Support Center </a>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none" />
+
+          <div class="col-md-4 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+              Newsletter
+            </h5>
+
+            <form class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Your email"
+                aria-label="Your email"
+                aria-describedby="basic-addon2"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-outline-white my-0" type="button">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">
+        Newlista Ventures LLC. Copyright © 2022 All rights reserved.
+      </div>
+    </footer>
+    <script>
+      function setupTabs() {
+        document.querySelectorAll(".tab-btn").forEach((button) => {
+          button.addEventListener("click", () => {
+            const sidebar = button.parentElement;
+            const tabs = sidebar.parentElement;
+            const tabNumber = button.dataset.forTab;
+            const tabActivate = tabs.querySelector(
+              `.tab-content[data-tab="${tabNumber}"]`
+            );
+
+            sidebar.querySelectorAll(".tab-btn").forEach((button) => {
+              button.classList.remove("tab-btn-active");
+            });
+            tabs.querySelectorAll(".tab-content").forEach((tab) => {
+              tab.classList.remove("tab-content-active");
+            });
+            button.classList.add("tab-btn-active");
+            tabActivate.classList.add("tab-content-active");
+          });
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        setupTabs();
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

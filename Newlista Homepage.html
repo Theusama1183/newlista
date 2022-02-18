@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="responsive.css" />
+    <title>Newlista Homepagee</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="/img/Logo.png" alt="" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/Newlista Homepage.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#">Resources</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link" href="#">About Us</a>
+          <a class="nav-item nav-link" href="#">Contact Us</a>
+          <a href="#">
+            <button class="btn btn-primary">+ Add Listings</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+   
+    <div class="main-section text-center">
+      <div class="heading1">
+        <h3>
+          Find Commercial Real Estate & Business for sale all over the World.
+        </h3>
+      </div>
+    </div>
+
+    <div class="2-section">
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openCity(event, 'Sale/Lease')"
+          id="defaultOpen"
+        >
+          Business for Sale/Lease
+        </button>
+
+        <button class="tablinks" onclick="openCity(event, 'Sale')">
+          Commerical Real Estate For Sale
+        </button>
+
+        <button class="tablinks" onclick="openCity(event, 'Lease')">
+          Commerical Real Estate For Lease
+        </button>
+      </div>
+      <div class="tabsec">
+        <div class="tabcon">
+          <div id="Sale/Lease" class="tabcontent">
+            <form action="" method="get">
+              <div class="select-field">
+                <label class="home-search-form-lbl" for="typeof">TYPE</label>
+                <select name="typeof" id="cars" class="input-fields">
+                  <option value="All types">All types</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="search-field">
+                <label class="home-search-form-lbl" for="cars">SEARCH BY</label>
+                <input
+                  type="text"
+                  placeholder="Enter Location"
+                  class="input-field-search"
+                />
+              </div>
+              <div class="form-btn">
+                <input type="submit" value="Search" class="input-butns" />
+              </div>
+            </form>
+          </div>
+
+          <div id="Sale" class="tabcontent">
+            <p>Tab 2</p>
+          </div>
+
+          <div id="Lease" class="tabcontent">
+            <p>Tab 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section3 text-center">
+        <div class="heading2">
+          <h3>Discover Our Featured Listings</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="item1">
+                <h3 class="featur-tag">Featured</h3>
+                <br /><br /><br /><br />
+                <div class="item-details">
+                  <p class="item-name">Cuban Restaurant</p>
+                  <strong>$ 295,900</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="item2">
+                <h3 class="featur-tag-none">Featured</h3>
+                <div class="space"></div>
+                <div class="item-details">
+                  <p class="item-name">Cuban Restaurant</p>
+                  <strong>$ 295,900</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="item3">
+                <h3 class="featur-tag">Featured</h3>
+                <br /><br /><br /><br />
+                <div class="item-details">
+                  <p class="item-name">Cuban Restaurant</p>
+                  <strong>$ 295,900</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="item4">
+                <h3 class="featur-tag">Featured</h3>
+                <br /><br /><br /><br />
+                <div class="item-details">
+                  <p class="item-name">Cuban Restaurant</p>
+                  <strong>$ 295,900</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="item5">
+                <h3 class="featur-tag-none">Featured</h3>
+                <div class="space"></div>
+                <div class="item-details">
+                  <p class="item-name">Cuban Restaurant</p>
+                  <strong>$ 295,900</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="item6">
+                <h3 class="featur-tag">Featured</h3>
+                <br /><br /><br /><br />
+                <div class="item-details">
+                  <p class="item-name">Cuban Restaurant</p>
+                  <strong>$ 295,900</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="item7">
+                <h3 class="featur-tag-none">Featured</h3>
+                <div class="space"></div>
+                <div class="item-details">
+                  <p class="item-name">Cuban Restaurant</p>
+                  <strong>$ 295,900</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="item8">
+                <h3 class="featur-tag-none">Featured</h3>
+                <div class="space"></div>
+                <div class="item-details">
+                  <div class="item-details">
+                    <p class="item-name">Cuban Restaurant</p>
+                    <strong>$ 295,900</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="item9">
+                <h3 class="featur-tag">Featured</h3>
+                <br /><br /><br /><br />
+                <div class="item-details">
+                  <p class="item-name">Cuban Restaurant</p>
+                  <strong>$ 295,900</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btngrp">
+            <button class="gallary-btn">Load More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="services-container">
+              <div class="img-container">
+                <img class="service-logo" src="/img/BuyProperty.png" alt="" />
+              </div>
+              <div class="service-details">
+                <h3>Buy Property and Businesses</h3>
+                <p>Find great deals and deal directly with the owner.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="services-container">
+              <div class="img-container">
+                <img class="service-logo" src="/img/SellPropertyh.png" alt="" />
+              </div>
+              <div class="service-details">
+                <h3>Sell Property and Businesses</h3>
+                <p>
+                  Sell your property and Business with ease. Allow principal
+                  investors to contact you directly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="services-container">
+              <div class="img-container">
+                <img class="service-logo" src="/img/RentProperty.png" alt="" />
+              </div>
+              <div class="service-details">
+                <h3>Rent Property and Businesses</h3>
+                <p>
+                  Rent your Property and business with ease. Tenants and future
+                  business owners, find your ideal location.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="services-container">
+              <div class="img-container">
+                <img
+                  class="service-logo"
+                  src="/img/FeatturedListing.png"
+                  alt=""
+                />
+              </div>
+              <div class="service-details">
+                <h3>Featured Listings</h3>
+                <p>
+                  Place your Property and Business on our featured listing page.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section5">
+        <div class="container">
+          <div class="jfhdj">
+            <h3>
+              A Marketplace For Owners To Sell Or Lease Commercial Real Estate
+              And Business
+            </h3>
+            <p>
+              Newlista helps you sell Commercial Real Estate for Sale by Owner.
+              At Newlista, you can list your commercial or business real estate
+              for sale without the middleman. FSBO Commercial Real Estate at
+              Newlista allows you to make your postings online without the
+              hassle of brokers, intermediaries, and costly fees. We also offer
+              Commercial Property for Lease by Owner, depending on your personal
+              needs. We allow owners to create property listings for free and
+              get notified immediately when a buyer makes an offer. You have the
+              power to accept or decline offers and stay up to date in your
+              personal portal. Your dashboard will provide updates on your
+              property, your listing views, inquiries and allow easy
+              communication with potential buyers. Businesses for sale by owner
+              are also a popular listing for Newlista users. We accept various
+              Commercial Real Estate Properties for your FSBO Commercial Real
+              Estate needs.
+            </p>
+            <strong class="fjh">Newlista Offers:</strong>
+            <ul>
+              <li>Property selling services for owners</li>
+              <li>Commercial Property for Sale by owner & FSBO Business</li>
+              <li>An easy to navigate platform for buyers and sellers</li>
+              <li>
+                Detail-oriented setup that keeps you in control of your sales
+              </li>
+              <li>Trustworthy communication with buyers</li>
+              <li>Free marketing resources for your property</li>
+              <li>Customizable listing and inbox management</li>
+              <li>
+                Buyers and Prospective tenants can easily make offers on your
+                property and receive them to your inbox
+              </li>
+              <li>
+                Save searches and receive notification by email when you a new
+                property or business is available
+              </li>
+              <li>& much more to come!</li>
+            </ul>
+            <p>
+              If you own commercial real estate or business properties you want
+              to post for sale by owner, Newlista is a great place. We welcome
+              foreclosed commercial property, abandoned and vacant property, and
+              tenant-occupied buildings for sale on our site. We also accept
+              Commercial Lease for Sale by Owner Listings and Business for Lease
+              by Owner opportunities. Newlista is bringing you all the resources
+              you need for free for a limited time. We created an easy and
+              trustworthy process for your selling needs. This medium is just
+              the beginning for Newlista. Post your FSBO Commercial Real Estate,
+              and be on the lookout as we continue to grow our site’s features,
+              functionality, and seller resources.
+            </p>
+          </div>
+        </div>
+      </div>
+                                <!-- Searvices -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="services-container">
+              <div class="img-container">
+                <img class="service-logo" src="/img/SaveMoney.png" alt="" />
+              </div>
+              <div class="service-details">
+                <h3>Save Money</h3>
+                <p>
+                  Save thousands of dollars in Broker and Intermediary fees.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="services-container">
+              <div class="img-container">
+                <img
+                  class="service-logo"
+                  src="/img/YourPrivateDashboard.png"
+                  alt=""
+                />
+              </div>
+              <div class="service-details">
+                <h3>Your private Dashboard</h3>
+                <p>
+                  Use your dashboard to communicate with prospective buyers as
+                  well as adding listings.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="services-container">
+              <div class="img-container">
+                <img class="service-logo" src="/img/Easytosearch.png" alt="" />
+              </div>
+              <div class="service-details">
+                <h3>Easy to Search</h3>
+                <p>Easily find your new real estate investment and business.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="services-container">
+              <div class="img-container">
+                <img class="service-logo" src="/img/BestMarketing.png" alt="" />
+              </div>
+              <div class="service-details">
+                <h3>Best Marketing</h3>
+                <p>
+                  Expose your listing to many buyers and prospective tenants.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                                <!-- Testimonials -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center">Testimonials</h1>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          
+            <div class="col-sm-4">
+                <div class="testi1">
+                    <img class="testi-logo" src="/img/Quote.png" alt="" />
+                    <p class="testimonial-desc">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Phasellus porta justo eget risus consectetur"
+                    </p>
+
+                    <div class="testi-man">
+                        <img class="testi-img" src="/img/Testimonial1.png" alt="" />
+                        <p class="name">Roy Bennett<br />Manager, Company Inc.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="testi1">
+                    <img class="testi-logo" src="/img/Quote.png" alt="" />
+                    <p class="testimonial-desc">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Phasellus porta justo eget risus consectetur"
+                    </p>
+
+                    <div class="testi-man">
+                        <img class="testi-img" src="/img/Testimonial 2.png" alt="" />
+                        <p class="name">Kenya Sova<br>Realtor, Company Inc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="testi1">
+                    <img class="testi-logo" src="/img/Quote.png" alt="" />
+                    <p class="testimonial-desc">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Phasellus porta justo eget risus consectetur"
+                    </p>
+
+                    <div class="testi-man">
+                        <img class="testi-img" src="/img/Testimonial 3.png" alt="" />
+                        <p class="name">Kathleen Peterson<br>Manager, Company Inc.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+                                        <!-- Blog -->
+<div class="section5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <h1 class="text-center">Real Estate and Business Tips</h1>
+              <p class="text-center">
+                  Search for commercial real estate properties for sale and lease and business for sale all over the world! Find many opportunities and deals.
+              </p>
+            </div>
+        </div>
+
+        <div class="row">
+          
+            <div class="col-sm-4">
+                <div class="Blog-container">
+                    <img class="Blog-Featured-image" src="/img/Blog 1.png" alt="" />
+                    <div class="blog-details">
+                        <h4 class="blog-title">Tips to sell commercial real estate</h4>
+                        <p class="blog-desc">
+                            Selling a commercial real estate property all alone may be a challenge, but it is not difficult. Although it tends to be an overwhelming assignment, it isn't inconceivable...
+                        </p>
+                        <a class="blog-read-more" href="#">Read More</a>
+                </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="Blog-container">
+                    <img class="Blog-Featured-image" src="/img/Blog 2.png" alt="" />
+                    <div class="blog-details">
+                        <h4 class="blog-title">Tips to sell commercial real estate</h4>
+                        <p class="blog-desc">
+                            Selling a commercial real estate property all alone may be a challenge, but it is not difficult. Although it tends to be an overwhelming assignment, it isn't inconceivable...
+                        </p>
+                        <a class="blog-read-more" href="#">Read More</a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="Blog-container">
+                    <img class="Blog-Featured-image" src="/img/Blog 3.png" alt="" />
+                        <div class="blog-details">
+                        <h4 class="blog-title">Tips to sell commercial real estate</h4>
+                        <p class="blog-desc">
+                            Selling a commercial real estate property all alone may be a challenge, but it is not difficult. Although it tends to be an overwhelming assignment, it isn't inconceivable...
+                        </p>
+                        <a class="blog-read-more" href="#">Read More</a>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="btngrp">
+            <button class="gallary-btn">Load More</button>
+          </div>
+    </div>
+</div>
+<footer class="page-footer font-small indigo">
+  <div class="container text-center text-md-left">
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+        <a class="footer-brand" href="#"
+          ><img src="/img/Logo.png" alt=""
+        /></a>
+        <br />
+        <img
+          class="social-ico"
+          src="/img/socialmedia_footer-1.png"
+          alt=""
+        />
+      </div>
+      <hr class="clearfix w-100 d-md-none" />
+      <div class="col-md-2 mx-auto">
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Explore</h5>
+
+        <ul class="list-unstyled">
+          <li>info@newlista.com</li>
+          <li>Mon - Sat, 08 AM - 06 PM</li>
+        </ul>
+      </div>
+      <hr class="clearfix w-100 d-md-none" />
+      <div class="col-md-2 mx-auto">
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+          Quick Link
+        </h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="/listing-lease-page.html">Listings</a>
+          </li>
+
+          <li>
+            <a href="#!">Terms of Use </a>
+          </li>
+          <li>
+            <a href="#!">Privacy Policy </a>
+          </li>
+          <li>
+            <a href="#!">Support Center </a>
+          </li>
+        </ul>
+      </div>
+      <hr class="clearfix w-100 d-md-none" />
+
+      <div class="col-md-4 mx-auto">
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+          Newsletter
+        </h5>
+
+        <form class="input-group">
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            placeholder="Your email"
+            aria-label="Your email"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-sm btn-outline-white my-0" type="button">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3">
+    Newlista Ventures LLC. Copyright © 2022 All rights reserved.
+  </div>
+</footer>
+
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
